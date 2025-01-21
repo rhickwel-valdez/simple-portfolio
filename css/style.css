@@ -4,7 +4,8 @@
     /* colors */
     --green: hsl(75, 94%, 57%);
     --white: hsl(0, 0%, 100%);
-    --grey-700: hsl(0, 0%, 58%);
+    --grey-600: hsl(0, 0%, 58%);
+    --grey-700: hsl(0, 0%, 20%);
     --grey-800: hsl(0, 0%, 12%);
     --grey-900: #141414;
 
@@ -66,8 +67,10 @@ h1 {
 p {
     text-align: justify;
     text-indent: 20px;
-    color: var(--grey-700);
+    color: var(--grey-600);
 }
+
+ul { list-style-type: none;}
 
 /* global modifiers */
 
@@ -124,3 +127,24 @@ p {
     font-weight: var(--fw-md);
 }
 
+.project-links a {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color: var(--grey-600);
+    border-radius: 8px;
+    padding: 1em;
+    text-decoration: none;
+
+    font: inherit;
+    font-weight: var(--fw-md);
+    color: inherit;
+
+    transition: 0.3s all ease-in-out;
+}
+
+.project-links a:hover,
+.project-links a:focus {
+    background-color: var(--green);
+    color: var(--grey-900);
+}
